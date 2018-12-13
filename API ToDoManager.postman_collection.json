@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "84f549e8-f95e-49c0-9338-e96b5ea7e2ab",
+		"name": "API Pessoal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "postTasks",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"Tarefa Backend NodeJs\",\n\t\"resume\": \"Fazer API Rest usando nodejs e express simulando um TODO manager\",\n\t\"isDone\": \"true\",\n\t\"isPriority\": \"true\"\n}\n\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/tasks/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/tasks/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putTasks",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"Tarefa Backend Java\",\n\t\"resume\": \"Fazer API Rest usando EJB e JAX-RS simulando um TODO manager\",\n\t\"isDone\": \"false\",\n\t\"isPriority\": \"true\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/tasks/2504483885870601",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks",
+						"2504483885870601"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteTasks",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/tasks/11209584442589282",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks",
+						"11209584442589282"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
